@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://unpkg.com/cirrus-ui">
+
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet@2.0.2"></script>
+  </head>
+  <body>
+    <div class="content">
+      <h3>Image Classification via a Webcam</h3>
+      <div class="divider"></div>
+
+      <div id="loading">Loading...</div>
+
+      <div id="console"></div>
+      <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+    </div>
+
+    <!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
+  </body>
+</html>
