@@ -13,8 +13,21 @@
 
       <div id="loading">Loading...</div>
 
-      <div id="console"></div>
-      <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+      <div class="row fluid-container">
+        <div class="col-fluid">
+          <input id='file-input' type='file' hidden />
+          <button id="classify-image" class="animated loading loading-left">Classify Picture</button>
+          
+          <div id="preview-image"></div>
+          <div id="result"></div>
+        </div>
+        <div class="col-fluid">
+          <button id="classify-webcam" class="animated loading loading-left">Classify Webcam</button>
+      
+          <div id="console"></div>
+          <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+        </div>
+      </div>
     </div>
 
     <!-- Load index.js after the content of the page -->
